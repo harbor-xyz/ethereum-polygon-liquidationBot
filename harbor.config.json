@@ -1,0 +1,39 @@
+{
+    "config": {
+      "name": "testnet-one-chain-one-actor"
+    },
+    "chains": [
+      {
+        "chain": "ethereum",
+        "config": {
+          "artifactsPath": "./artifacts",
+          "deploy": {
+            "scripts": "./deploy"
+          },
+          "afterDeploy": {
+            "location": "./afterDeploy"
+          }
+        }
+      }, 
+      {
+        "chain": "polygon",
+        "config": {
+          "artifactsPath": "./artifacts",
+          "deploy": {
+            "scripts": "./deploy"
+          },
+          "afterDeploy": {
+            "location": "./afterDeploy"
+          }
+        }
+      }
+    ],
+    "offChainActors": [
+      {
+        "dockerfile": "./offChain/liquidation-bot-1/Dockerfile",
+        "buildPath": "./offChain/liquidation-bot-1",
+        "name": "liquidationBot",
+        "ports": [3000]
+      }
+    ]
+  }
