@@ -1,6 +1,6 @@
-# Harbor Testnet with Two Chains and One Off-Chain Actor
+# Harbor Testnet with Two Chains (Ethereum/Polygon) and One Off-Chain Actor (liquidationBot)
 
-This is to demosntrate configuring, building and running a sample Testnet with two chains and one locally built actor. Clone this repo and follow along.
+This is to demosntrate configuring, building and running a sample Testnet with two chains (ethereum and polygon) and one locally built actor (liquidation bot). Clone this repo and follow along.
 
 ## Copy API Key
 
