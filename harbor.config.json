@@ -1,7 +1,4 @@
 {
-    "config": {
-      "name": "testnet-one-chain-one-actor"
-    },
     "chains": [
       {
         "chain": "ethereum",
