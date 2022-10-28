@@ -10,7 +10,8 @@
           "afterDeploy": {
             "location": "./afterDeploy"
           }
-        }
+        },
+        "tag": "tag-1"
       }, 
       {
         "chain": "polygon",
@@ -22,7 +23,8 @@
           "afterDeploy": {
             "location": "./afterDeploy"
           }
-        }
+        },
+        "tag": "tag-1"
       }
     ],
     "offChainActors": [
@@ -30,7 +32,8 @@
         "dockerfile": "./offChain/liquidation-bot-1/Dockerfile",
         "buildPath": "./offChain/liquidation-bot-1",
         "name": "liquidationBot",
-        "ports": [3000]
+        "ports": [3000],
+        "tag": "tag-1"
       }
     ]
   }
