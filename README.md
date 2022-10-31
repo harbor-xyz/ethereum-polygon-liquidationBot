@@ -25,8 +25,9 @@ This will ask you to add in your credentials, which includes your User Key and P
 To run the Testnet, execute the following command in the same directory as this project:
 
 ```bash
-harbor apply
+harbor apply <testnet-name>
 ```
+Where `<testnet-name>` is a Testnet name of your choosing.
 
 You should see this:
 
