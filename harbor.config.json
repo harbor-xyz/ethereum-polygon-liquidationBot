@@ -1,39 +1,35 @@
 {
-    "chains": [
-      {
-        "chain": "ethereum",
-        "config": {
-          "artifactsPath": "./artifacts",
-          "deploy": {
-            "scripts": "./deploy"
-          },
-          "afterDeploy": {
-            "location": "./afterDeploy"
-          }
-        },
-        "tag": "tag-1"
-      }, 
-      {
-        "chain": "polygon",
-        "config": {
-          "artifactsPath": "./artifacts",
-          "deploy": {
-            "scripts": "./deploy"
-          },
-          "afterDeploy": {
-            "location": "./afterDeploy"
-          }
-        },
-        "tag": "tag-1"
-      }
-    ],
-    "offChainActors": [
-      {
-        "dockerfile": "./offChain/liquidation-bot-1/Dockerfile",
-        "buildPath": "./offChain/liquidation-bot-1",
-        "name": "liquidationBot",
-        "ports": [3000],
-        "tag": "tag-1"
-      }
-    ]
-  }
+  "chains": [
+    {
+      "chain": "ethereum",
+      "config": {
+        "artifactsPath": "./artifacts",
+        "deploy": {
+          "scripts": "./deploy"
+        }
+      },
+      "tag": "tag-1"
+    },
+    {
+      "chain": "polygon",
+      "config": {
+        "artifactsPath": "./artifacts",
+        "deploy": {
+          "scripts": "./deploy"
+        }
+      },
+      "tag": "tag-1"
+    }
+  ],
+  "offChainActors": [
+    {
+      "dockerfile": "./offChain/liquidation-bot-1/Dockerfile",
+      "buildPath": "./offChain/liquidation-bot-1",
+      "name": "liquidationBot",
+      "ports": [
+        3000
+      ],
+      "tag": "tag-1"
+    }
+  ]
+}
